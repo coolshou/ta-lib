@@ -1,0 +1,4 @@
+usr/include/*
+usr/include/ta-lib/*
+usr/lib/*/lib*.a
+usr/lib/*/lib*.la

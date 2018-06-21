@@ -1,0 +1,28 @@
+Source: talib
+Priority: optional
+Maintainer: coolshou <coolshou@unknown>
+Build-Depends: debhelper (>= 10), autotools-dev, make, 
+    dh-autoreconf (>=17), automake (>=1.15), libtool (>=2.4.6)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/coolshou/ta-lib
+Vcs-Git: https://github.com/coolshou/ta-lib.git
+#Vcs-Browser: https://github.com/coolshou/ta-lib.git
+
+Package: talib-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: talib1 (= ${binary:Version}), ${misc:Depends}
+Description: develop package of Technical analysis library
+ Development files for ta_lib
+
+Package: talib1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Technical analysis library with indicators like ADX, MACD, RSI, Stochastic, TRIX...
+ Technical analysis library with indicators like ADX, MACD, RSI, Stochastic, TRIX...
+ This is not an end-user GUI trading or charting application. 
+ It is instead targeted to application developers using either Excel, 
+ .NET, Mono, Java, Perl, Python or C/C++.
